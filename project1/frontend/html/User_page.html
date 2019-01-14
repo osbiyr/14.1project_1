@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <link rel="stylesheet" type="text/css" href="../css/User_page.css">
+   	  <script src="../js/index.js"></script>
+
+  </head>
+  
+  <title>user page</title>
+	
+  <div class="headline"><h1> the spot</h1></div>
+	
+ 
+   
+ <body>
+  
+  
+  <!-- navigation bar -->
+  <ol>
+   <li><a href="index.html">home</a></li>
+   <li><a href="User_page.html">user page</a></li>
+   <li><a href="register.html">register/sign in</a></li>
+   <li><a href="about_us.html">about us</a></li>
+  </ol>
+     
+  <!-- left wing -->  
+  <span id="left"></span>
+  <!-- user name -->
+  <div class="name"><h1>Ohad Rosenberg</h1></div>
+  <!-- user profile picture -->
+  <div class="user_pic"><img src="../resources/user_pic.jpg" /></div>
+ 
+  <!-- upload files to the user page -->
+  <input id="upload_file" type="file" name="myfile" />
+  
+  <button id="upload" onclick="uploadFunction()">post picture</button>
+
+  <img id="photo_upload" src="../resources/user_pic.jpg" />
+   <video id="video_upload" src="big_buck_bunny.mp4" controls/></video>
+	<audio controls id="audio_upload" />
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+    </audio>
+ 
+ <!-- edit information -->
+  <button id="edit" onclick="editFunction()" style ="border-radius: 40px;background:green;">edit your information</button>
+  
+  <input id="info" type="Text" name="name" placeholder="Edit your information" size="40" style ="border-radius: 40px";/>
+  
+  <button id="save" onclick="saveFunction()" style ="border-radius: 40px;background:green;">save changes</button>
+  
+  <div class="present_info"> <p id="info_text"></p></div> 
+   
+  <span id="right"></span>
+  
+   
+  
+  </body>
+  <script>
+  
+  //post the information from text box and information textbox and edit button supose to disapere.. still in progress..
+ function saveFunction(){
+  var a=document.getElementById("info").value;
+   
+  document.getElementById("info_text").innerHTML=a;
+  
+  var b=document.getElementById("info");
+  var c=document.getElementById("save");
+  var c=document.getElementsByClassName("present_info");
+     if (b.style.display === "block") {
+      b.style.display = "none";
+                                     } 
+     else {
+      b.style.display = "none";
+          }
+     if (c.style.display === "block") {
+      c.style.display = "none";
+                                      }
+     else {
+      c.style.display = "none";
+          }
+	 if (c.style.display === "none") {
+     c.style.display = "block";
+                                     }
+     else {
+     c.style.display = "block";
+          }
+ 
+                        }
+						
+  // once clicking edit button the information textbox and save button will present themselvs						 
+ function editFunction(){
+ 
+  var a=document.getElementById("info");
+  var b=document.getElementById("save");
+   
+    if (a.style.display === "none") {
+     a.style.display = "block";
+                                    }
+    else {
+     a.style.display = "block";
+         }
+    if (b.style.display === "none") {
+     b.style.display = "block";
+                                    } 
+    else {
+     b.style.display = "block";
+         }
+	if (c.style.display === "none") {
+     c.style.display = "block";
+                                    }
+    else {
+     c.style.display = "block";
+         }
+                       }
+  
+  //upload files into user page
+ /*function uploadFunction(){
+  
+  var a = document.getElementById('upload_file').value;
+   
+  var lastIndex = a.lastIndexOf("h");
+  
+  var res = a.substring(lastIndex+2,a.length);
+  
+  document.getElementById('photo_upload').src ="../resources/" + res;
+   
+   }*/
+  
+ 
+  </script>
+</html>

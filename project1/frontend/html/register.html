@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+   	<script src="../js/register.js"></script>
+
+	<div class="headline"><h1> the spot</h1></div>
+	
+  </head>
+  <body>
+  
+  <!-- navigation bar -->
+  <ol>
+   <li><a href="index.html">home</a></li>
+   <li><a href="User_page.html">user page</a></li>
+   <li><a href="register.html">register/sign in</a></li>
+   <li><a href="about_us.html">about us</a></li>
+  </ol>
+  
+  <!-- left wing with some information about the website -->
+  <span id="left"><br /><br /><br /><br /><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;what is the spot ?<br /><br /><br /> In the bar website you can order drinks and food that will be delivered to your home.<br /><br /><br />
+   You will enjoy a live stream from the pub with our 360 cameras view.<br /><br /><br />
+   You would be able to meet new friends with the chat and live videos from your home!!</span>
+  
+  <!-- right wing with some pictures from the bar.. in the future i want to stop
+  the pics while hover and onclick in one picture to make that picture big and in the center of the page -->
+  <span id="right"><marquee direction="up"><img src="../resources/bar1.jpg" /><img src="../resources/bar2.jpg" /><img src="../resources/bar3.jpg" /><img src="../resources/bar4.jpg" /><img src="../resources/bar5.jpg" /></marquee></span>
+  
+  <div class="create"><h1>Create new account</h1></div>
+  
+  <div class="sign_in"><h1>already have an account ?</h1><br /><h2>sign in</h2></div>
+  
+  <div class="vl"></div>
+  
+  <!-- create account form -->
+  <div class="create_form">
+   <form action="" method="post" onsubmit= "return false;" > 
+  
+    <input type="Text" name="reg_form" placeholder="&nbsp;First name"  required/><br /><br />
+    <input type="Text" name="reg_form" placeholder="&nbsp;Last name" size="20" required/><br /><br />
+    <input type="email" name="reg_form" placeholder="email addres" required/><br /><br />
+    <input type="password" id="pas1" name="reg_form" size="20" maxlength="8" placeholder="&nbsp;Password" required/><br /><br />
+    <input type="password" id="pas2" name="reg_form" size="20" maxlength="8" onchange="confirm_pass()" placeholder="&nbsp;Confirm Password" required/><br /><br />
+    <input type="radio" name="reg_form" value="M" required />Male&nbsp;
+    <input type="radio" name="reg_form" value="F" required />Female<br /><br /><br />
+   <!-- <button type="button" onclick="cloneThat()">Register</button>-->
+    <input id="sub" type="submit" value="Submit" onclick="cloneThat()">
+
+   </form>
+  </div>
+<div id="output">
+<div id="new_data">
+
+<div class="first_name"></div>
+<div class="last_name"></div>
+<div class="email"></div>
+<div class="password"></div>
+<div class="confirm_password"></div>
+<div class="m"></div>
+<div class="f"></div>
+
+
+
+</div>
+</div>
+  <!-- sign in form -->
+  <div class="sign_in_form">
+   <form>
+
+    <input type="email" name="email" placeholder="email addres" required/><br /><br />
+    <input type="password" name="pas" size="20" maxlength="8" placeholder="&nbsp;Password" required/><br /><br /><br />
+    <input type="submit" value="Sign in" />
+	
+   </form>
+  </div>
+ </body>
+</html>

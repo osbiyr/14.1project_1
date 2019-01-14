@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link href="../css/maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="../js/maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="../js/cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="../js/index.js"></script>
+	
+    </head>
+  
+  
+    <body>
+   
+   
+        <!-- left wing -->
+        <span id="left">
+            <!-- news will be present here -->
+            <marquee>news news news news news</marquee>
+        </span>
+  
+  
+  
+        <!-- right wing -->
+        <span id="right">
+  
+            <!-- food menu -->
+            <div class="menu">
+                <button class="menu_button">menu</button>
+                <div class="menu_content">
+                    <a href="#">Entrees</a>
+                    <a href="#">Main course</a>
+                    <a href="#">Drinks</a>
+                </div>
+            </div>  
+        
+		</span>
+	
+	
+	
+        <!-- headline -->
+        <h1> the spot</h1>
+   
+   
+	    <!-- navigation bar -->
+	    <ol>
+            <li><a href="index.html">home</a></li>
+            <li><a href="User_page.html">user page</a></li>
+            <li><a href="register.html">register/sign in</a></li>
+            <li><a href="about_us.html">about us</a></li>
+        </ol>
+ 
+   
+  
+   
+  
+  
+        <!-- live stream from the bar and tables fichers.. still need to think about its implementation -->
+        <span id="stream"><br /><br /><br /><br />live stream
+   
+        <!-- sopuse to be video
+        <video src="Beach_Party_1.mov" controls>
+        </video>-->
+        </span>
+  
+  
+        <span id="tables"><br /><br /><br /><br />tables</span>  
+  
+  
+        <!-- <button id="search">search</button>   search button is fixed, thats why its not inside the feed span -->
+        <div class="container h-100">
+            <div class="d-flex justify-content-center h-100">
+                <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <img src="../resources/Search-512.png" class="search_icon"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+  
+   
+
+        <!-- main feed -->
+        <span id="center"><br /><br /><br />&nbsp;&nbsp;<br /><br />
+    
+            <!-- posts -->
+            <input id="text" type="Text" name="text" placeholder="what are you thinking about ?" size="40" style ="border-radius: 40px";/>
+            <button onclick="cloneThat();" style ="border-radius: 40px;background:green;">post</button>
+            <!-- <button onclick="cloneThat()" style="position:absolute; top:50%;left:50%;z-index:2;ש'">clone that </button>-->
+   
+            <!-- upload files -->
+            <input id="upload_file" type="file" name="myfile" accept="audio/*,video/*,image/*" />	
+         	<button id="upload_button" onclick="uploadFunction()">post picture</button>
+
+	    </span>
+	
+
+    <span id="post" name="feed_element" style=" background:white;
+    width:772px;
+    height:302px;top:79%;
+    left:24%;
+    position:absolute;"><br /><p id="feed_text"></p>
+
+	    <img id="photo_upload" class= "hidden" name="feed_element" src="../resources/user_pic.jpg" />
+        <video id="video_upload" name="feed_element" src="big_buck_bunny.mp4" controls/></video>
+	    <audio controls id="audio_upload" name="feed_element" />
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+        </audio>
+  
+        <span id="user_pic" class="hidden" name="feed_element"><img src="../resources/user_pic.jpg" /><p id="user_name"></p><p id="user_date"></p></span>
+    
+        <!-- comments, likes -->
+        <button id="like" class="hidden" name="feed_element" onclick="like_Function()" style ="border-radius: 40px;background:grey;">like</button>
+     	<button id="comment" class="hidden" name="feed_element" onclick="comment_Function()" style ="border-radius: 40px;background:grey;">comment</button>
+	    <button id="com_post" class="hidden" name="feed_element" onclick="com_post_Function()" style ="border-radius: 40px;background:grey;">post</button>
+        <input id="com_feed" class="hidden" name="feed_element" type="Text" placeholder="put your comment here" size="40" style ="border-radius: 40px";/>
+	    <span id="com_post_feed" class="hidden" name="feed_element">&nbsp;&nbsp;<p id="feed_text2"></p></span>
+        <button id="cancel" class="hidden" name="feed_element" onclick="cancel_Function()" style ="border-radius: 40px;background:grey;">cancel</button> 
+
+    </span> 
+
+
+   	<div id="template" style="background:white;
+		width:772px;
+		height:202px;top:110%;
+		margin:auto;
+  margin-top:20px;
+  
+  right: 0;
+  bottom: 0;
+  left: 0;
+		position:absolute;">
+
+
+        <div id="output">
+	      
+			<div class="post_text"></div>	 
+		    <div class="upload_file"></div>	 	 
+            <img class= "hidden user_pic" name="feed_element" />
+			<div class="user_name"></div>	 
+			<div class="time"></div>	 
+			<div class="com_feed"></div>
+            
+			<button  class="like_btn" name="feed_element" onclick="like_Function()" style ="border-radius: 40px;background:grey;">like</button>
+     	    <button  class="com_btn" name="feed_element" onclick="comment_Function()" style ="border-radius: 40px;background:grey;">comment</button>
+            
+	    </div>
+
+
+    </div>
+  
+  
+  </body>
+  
+
+ 
+</html>

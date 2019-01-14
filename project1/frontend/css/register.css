@@ -1,0 +1,166 @@
+body{
+
+    background-image: linear-gradient(90deg, #f0d817, #3eb308, #e20d0d);
+
+    }
+	
+.headline h1{
+
+    font-size:60px;
+    text-align:center;
+    font-style:italic;
+    text-decoration:underline;
+	
+             }
+			 
+.sign_in h1{
+	
+    top:30%;
+    left:50%;
+    position:absolute;
+ 
+           }
+		   
+.sign_in h2{
+	
+    top:40%;
+    left:50%;
+    position:absolute;
+ 
+           }
+ 
+.create{
+
+    top:30%;
+    left:28%;
+    position:absolute;
+
+       }
+	   
+.create_form{
+ 
+    top:50%;
+    left:28%;
+    position:absolute;
+
+            }
+			
+.create_form input{
+  
+    size:30;
+    border-radius: 40px;
+    background:none;
+  
+                  }
+				  
+.sign_in_form{
+   
+    top:50%;
+    left:50%;
+    position:absolute;
+ 
+             }
+			 
+.sign_in_form input{
+	
+    size:30;
+    border-radius: 40px;
+    background:none;
+     
+                   }
+   
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+    font-weight:bolder;
+    color:black;
+	
+                            }
+							
+#left{
+                   
+                   
+    border-radius: 40px;
+	background: linear-gradient(90deg, #f0d817, #3eb308, #e20d0d);
+	width:220px;
+	height:100%;
+	position:absolute;
+	left:10%;
+	font-weight:bolder;
+	font-style:italic;
+                     
+     }
+	 
+#right{
+                   
+    border-radius: 40px;
+	background: linear-gradient(90deg, #f0d817, #3eb308, #e20d0d);
+	width:220px;
+	height:100%;
+	position:absolute;
+	right:10%;
+                    
+     }
+	 
+#right img{
+	
+    width:100px;
+	height:100px;
+	position:relative;
+	display:block;
+	margin-bottom:5px;
+	top:10%;
+	left:27%;
+	
+          }
+.vl {
+	
+    border-left: 5px solid black;
+    height: 500px;
+    position: absolute;
+    left: 48%;
+    top: 34%;
+    }
+	
+ol{
+     
+    margin-left:30%;
+     
+  }
+     
+     
+    li {
+		
+        list-style-type: none;
+		background:linear-gradient(90deg, #f0d817, #3eb308, #e20d0d);
+		width: 100px;
+		padding: 5px 0 5px 0;
+		margin: 5px 10px 5px 10px;
+		border: solid 2px purple;
+		border-radius: 40px;
+		float: left;
+		text-align: center;
+		left:29%;
+       }
+
+        li:hover {
+			
+            background: Transparent;
+                 }
+
+                a {
+					
+                    display: block;
+                  }
+
+#output{
+
+
+
+    top:100%;
+    left:28%;
+    position:absolute;
+
+
+
+}	
+  
